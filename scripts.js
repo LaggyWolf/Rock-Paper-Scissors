@@ -1,5 +1,5 @@
 const moves = ['rock','paper','scissors'];
-let playerMove = 0
+let playerMove = 0;
 
 function computerPlay(){
     let moveNum = Math.floor(Math.random() * 3);
@@ -33,3 +33,13 @@ function playRound(playerSelection,computerSelection){
         }
     }
 }
+
+function game(){
+    for (let i = 0;i < 5; i++){
+        console.log(playRound(prompt('Please enter a move'),computerPlay()));
+    };
+}
+
+
+
+
