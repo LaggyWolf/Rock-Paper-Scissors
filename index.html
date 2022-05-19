@@ -4,11 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <a rel="stylesheet" href="style.css"></a>
-    <script src="scripts.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css"></a>
+    <script src="scripts.js" defer></script>
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <h1>Test</h1>
+    <div class="moves-container" style="display:block;">
+        <button onclick="game('rock',computerPlay())" class="moves-button">Rock</button>
+        <button onclick="game('paper',computerPlay())" class="moves-button">Paper</button>
+        <button onclick="game('scissors',computerPlay())" class="moves-button">Scissors</button>
+    </div>
+
+    <h2 class="round-text" style="display:block;">Click on the buttons above to start!</h1>
+
+    <div id="counters">
+        <h1 id="computerScore">Computer: 0</h1>
+        <h1 id="playerScore">Player: 0</h1>
+    </div>
+
+    <div id="winText">
+        <h1 id="winnerText">Someone Won!</h1>
+        <button onclick="toggleHide()">New Game</button>
+    </div>
 </body>
 </html>
